@@ -1,0 +1,46 @@
+Simulação de Interruptores e Lâmpadas em Ruby
+Este projeto consiste em uma simulação em Ruby que representa o problema de identificar qual interruptor controla qual lâmpada usando um modelo simples. O objetivo é demonstrar a lógica por trás da solução do problema, onde se pode identificar lâmpadas ligadas e suas temperaturas.
+
+Descrição do Código
+O código define duas classes principais:
+
+Lampada
+
+Representa uma lâmpada com os seguintes atributos:
+estado: Indica se a lâmpada está ligada (true) ou desligada (false).
+temperatura: Indica a temperatura da lâmpada ("fria" ou "quente").
+Métodos:
+ligar: Liga a lâmpada e a torna quente.
+desligar: Desliga a lâmpada e a torna fria.
+Sala
+
+Representa uma sala com três lâmpadas.
+Métodos:
+controlar_lampada(index, acao): Permite controlar as lâmpadas ligando ou desligando de acordo com o interruptor.
+identificar_lampadas: Identifica qual interruptor controla cada lâmpada com base no estado e temperatura.
+Instruções de Uso
+Pré-requisitos: Certifique-se de ter Ruby instalado no seu sistema. Caso contrário, siga as instruções de instalação em ruby-lang.org.
+
+Execução do Programa:
+
+Copie o código Ruby para um arquivo com a extensão .rb, por exemplo, lampadas.rb.
+
+Abra o terminal e navegue até o diretório onde o arquivo está salvo.
+
+Execute o programa com o seguinte comando:
+
+bash
+Copiar código
+ruby lampadas.rb
+O que o Programa Faz:
+
+O programa simula o processo de ligar o primeiro interruptor, esperar um tempo, desligá-lo e então ligar o segundo interruptor.
+Ele verifica o estado das lâmpadas e determina qual interruptor controla cada lâmpada.
+Resultado Esperado
+Ao executar o programa, você verá a saída indicando qual interruptor controla cada lâmpada. A saída será um hash com o mapeamento de interruptores para lâmpadas, mostrando a lâmpada quente, a lâmpada fria e a lâmpada que está ligada.
+
+Exemplo de Saída
+ruby
+Copiar código
+Resultado: {"Interruptor 1"=>1, "Interruptor 2"=>2, "Interruptor 3"=>3}
+Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato.
